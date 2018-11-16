@@ -1,3 +1,6 @@
+FORK & NOTICE
+this is a fork which removes the `js/gforms-api-upload.js` file, because with newer gravity forms version it never finishes uploading - this is only for a legacy project, and a hacky workaround, needs to be investigated further.
+
 === Gravity Forms Advanced File Uploader ===
 Contributors: ben.moody
 License: GPLv3
