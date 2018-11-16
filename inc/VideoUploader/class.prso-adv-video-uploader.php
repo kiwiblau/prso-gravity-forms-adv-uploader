@@ -989,16 +989,16 @@ class PrsoAdvVideoUploader {
 		
 		//Enqueue plugin script for form page
 		if( !is_admin() ) {
-			
-			//Enqueue plugin script
-			wp_enqueue_script( 'prso-gforms-api-upload', plugins_url('js/gforms-api-upload.js', __FILE__) );
+			/** does not work - submitting/uploading never finishes */ 
+			// //Enqueue plugin script
+			// wp_enqueue_script( 'prso-gforms-api-upload', plugins_url('js/gforms-api-upload.js', __FILE__) );
 			
 			//Form plugin js object
-			$plugin_script_obj['gform_id'] 	= $form_id; 
-			$plugin_script_obj['images'] 	= plugins_url('images', __FILE__);
+			// $plugin_script_obj['gform_id'] 	= $form_id; 
+			// $plugin_script_obj['images'] 	= plugins_url('images', __FILE__);
 			
-			//Localize plugin js object
-			wp_localize_script( 'prso-gforms-api-upload', 'prso_gforms_api_upload_vars', $plugin_script_obj );
+			// //Localize plugin js object
+			// wp_localize_script( 'prso-gforms-api-upload', 'prso_gforms_api_upload_vars', $plugin_script_obj );
 			
 		}
 		
